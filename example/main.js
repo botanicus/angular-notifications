@@ -2,6 +2,8 @@
 require.config({
   urlArgs: 'bust=' + (new Date()).getTime(),
 
+  paths: {angularAnimate: 'bower_components/angular-animate/angular-animate.js'},
+
   map: {
     '*': {css: 'bower_components/require-css/css.js'}
   }

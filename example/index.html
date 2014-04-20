@@ -7,7 +7,7 @@
 
     <title ng-bind="title"></title>
 
-    <script data-main="main.js" src="bower_components/requirejs/require.js"></script>
+    <script async data-main="main.js" src="bower_components/requirejs/require.js"></script>
   </head>
 
   <body>
@@ -19,7 +19,7 @@
     </noscript>
 
     <!-- By using this we won't get broken styles. -->
-    <div id="container" ng-include="bustify('main.html')">
+    <div id="container" ng-include="bustify('main.html')" ng-controller="NotificationsController">
       <div style="padding: 5%;">
         <em style="font-family: sans-serif; font-size: 28px;">Loading ...</em>
       </div>

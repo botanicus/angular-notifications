@@ -1,8 +1,17 @@
-var app = angular.module('app', ['notifications']);
+require(['angular-notifications', 'bower_components/angular-animate/angular-animate.js'], function () {
+  var app = angular.module('app', ['notifications', 'ngAnimate']);
 
-require(['angular-notifications'], function () {
   app.controller('MainController', function ($scope, Notifications) {
     $scope.title = 'Notifications Test';
+
+    $scope.startTime = new Date().getTime();
+
+    $scope.bustify = function (path) {
+      return path + '?bust=' + this.startTime;
+    };
+  });
+
+  app.controller('NotificationsController', function ($scope, Notifications) {
 
     // Link scope.notifications and register update hooks.
     Notifications.logging = true;
@@ -13,11 +22,6 @@ require(['angular-notifications'], function () {
     Notifications.list.create("We think your email could be outdated.", {type: 'warning'});
     Notifications.list.create("Your order was cancelled!", {type: 'error'});
 
-    $scope.startTime = new Date().getTime();
-
-    $scope.bustify = function (path) {
-      return path + '?bust=' + this.startTime;
-    };
 
     $scope.template = {
       message: "You are being notified.",
@@ -32,12 +36,15 @@ require(['angular-notifications'], function () {
 
       console.log(notification);
 
-      // So we can't change already created notification.
+      // So we won't change an already created notification.
       this.template = angular.copy(this.template);
     };
   });
 
   // Bootstrap the AngularJS app.
+  //
+  // This is done here because we have to
+  // wait for all the dependencies to load.
   console.log("Bootstrapping ...");
   angular.bootstrap(document, ['app']);
 });
