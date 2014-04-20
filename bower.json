@@ -1,0 +1,25 @@
+{
+  "name": "angular-notifications",
+  "main": "angular-notifications.js",
+  "dependencies": {
+    "angular": null,
+    "requirejs": null,
+    "jasmine": null
+  },
+  "version": "0.0.1",
+  "authors": [
+    "James C Russell <james@101ideas.cz>"
+  ],
+  "description": "Notifications for AngularJS.",
+  "keywords": [
+    "AngularJS",
+    "notifications"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/botanicus/angular-notifications",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

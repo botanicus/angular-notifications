@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-docular": "~0.1.2"
+  }
+}

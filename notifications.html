@@ -1,0 +1,7 @@
+<div
+  class="notification-{{notification.options.type}}"
+  ng-repeat="notification in notifications"
+>
+  {{notification.message}}
+  <a href="" ng-click="notification.remove()">x</a>
+</div>
