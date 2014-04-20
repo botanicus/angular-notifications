@@ -1,2 +1,15 @@
 <h1>Notification Service Test</h1>
+
+<form name="form" ng-submit="notifyMe()">
+  <div>
+    <input type="text" size="50" ng-model="template.message" />
+  </div>
+
+  <input type="checkbox" ng-model="template.options.sticky" /> Sticky
+
+  <select ng-model="template.options.type" ng-options="type for type in template.types"></select>
+
+  <button>Notify me!</button>
+</form>
+
 <div notifications />

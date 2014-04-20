@@ -2,8 +2,6 @@
 require.config({
   urlArgs: 'bust=' + (new Date()).getTime(),
 
-  // deps: ['main-controller.js'],
-
   map: {
     '*': {css: 'bower_components/require-css/css.js'}
   }
