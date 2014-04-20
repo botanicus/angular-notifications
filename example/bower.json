@@ -1,0 +1,15 @@
+{
+  "name": "angular-notifications-example",
+  "dependencies": {
+    "requirejs": null,
+    "require-css": null,
+
+    "bootstrap": null,
+
+    "angular": null,
+    "angular-sanitize": null,
+    "angular-bootstrap": null,
+
+    "jasmine": null
+  }
+}

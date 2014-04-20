@@ -55,5 +55,9 @@ webdriver-manager start
 
 # TODO
 
+- README
+- Integration tests.
+- Install it to the example using Bower.
+
 - Generate Documentation
 - Style notifications like they are in leadsorama (`<button class="close" ng-click="removeNotification(notification)"> <i class="fa fa-times-circle"></i></button>`).

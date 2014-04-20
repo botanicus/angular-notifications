@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-controller="MainController">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title ng-bind="title"></title>
+
+    <script data-main="main.js" src="bower_components/requirejs/require.js"></script>
+  </head>
+
+  <body>
+    <!-- No JS error message. -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled in order for this application to display correctly.
+      </div>
+    </noscript>
+
+    <!-- By using this we won't get broken styles. -->
+    <div id="container" ng-include="'main.html'">
+      <div style="padding: 5%;">
+        <em style="font-family: sans-serif; font-size: 28px;">Loading ...</em>
+      </div>
+    </div>
+  </body>
+</html>
