@@ -56,7 +56,9 @@ webdriver-manager start
 # TODO
 
 - README
-- Integration tests.
+- TravisCI
+- PhantomJS jasmine.
+- Integration tests https://github.com/angular/protractor/issues/66
 - Install it to the example using Bower.
 
 - Generate Documentation

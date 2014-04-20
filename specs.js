@@ -91,6 +91,6 @@ require(['notifications.js'], function (service) {
   });
 
   // Run the tests.
-  document.querySelector('.alert').innerHTML = '';
+  // document.querySelector('.alert').innerHTML = '';
   jasmine.getEnv().execute()
 });

@@ -5,7 +5,7 @@ define(function () {
   service.log = function () {
     if (service.logging) {
       var slice = Array.prototype.slice;
-      var args  = slice.call(arguments, log.length);
+      var args  = slice.call(arguments, service.log.length);
       console.log(args);
     };
   };
