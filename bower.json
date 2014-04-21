@@ -3,8 +3,11 @@
   "main": "angular-notifications.js",
   "dependencies": {
     "angular": null,
-    "requirejs": null,
+    "requirejs": null
+  },
+  "devDependencies": {
     "jasmine": null
+
   },
   "version": "0.0.1",
   "authors": [
@@ -20,6 +23,11 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "example",
+    "Gruntfile.js",
+    "package.json",
+    "specs.html",
+    "speps.js"
   ]
 }
