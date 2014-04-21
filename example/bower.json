@@ -10,10 +10,10 @@
     "angular-sanitize": null,
     "angular-bootstrap": null,
 
-    "angular-notifications": "git://github.com/botanicus/angular-notifications.git"
+    "angular-notifications": "botanicus/angular-notifications"
   },
 
   "devDependencies": {
-    "jasmine": null,
+    "jasmine": null
   }
 }
