@@ -55,6 +55,7 @@ webdriver-manager start
 
 # TODO
 
+- https://github.com/jirikavi/AngularJS-Toaster and https://github.com/marcorinck/angular-growl
 - README
 - TravisCI
 - PhantomJS jasmine.
