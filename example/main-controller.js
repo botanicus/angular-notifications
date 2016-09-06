@@ -1,4 +1,4 @@
-require(['angular-notifications', 'bower_components/angular-animate/angular-animate.js'], function () {
+require(['bower_components/angular-notifications/angular-notifications.js', 'bower_components/angular-animate/angular-animate.js'], function () {
   var app = angular.module('app', ['notifications', 'ngAnimate']);
 
   app.controller('MainController', function ($scope, Notifications) {
@@ -6,8 +6,9 @@ require(['angular-notifications', 'bower_components/angular-animate/angular-anim
 
     $scope.startTime = new Date().getTime();
 
+    // For main.html only, the rest is done by require.config.urlArgs in main.js.
     $scope.bustify = function (path) {
-      return path + '?bust=' + this.startTime;
+      return path;// + '?bust=' + this.startTime;
     };
   });
 
